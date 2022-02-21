@@ -44,7 +44,7 @@ const hardCardsUrls = [
 ];
 
 let currentLevel = localStorage.getItem('level') === 'hard' ? hardCardsUrls : easyCardsUrls;
-document.querySelector(`#${localStorage.getItem('level')}`).classList.add('active');
+document.querySelector(`#${localStorage.getItem('level') || 'easy'}`).classList.add('active');
 
 const indexes = [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7];
 
