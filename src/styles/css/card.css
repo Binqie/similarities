@@ -1,0 +1,28 @@
+.card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.card::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('@img/questionmark/loop.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 10;
+    transition: all 0.4s;
+}
+.card__img {
+    width: 100%;
+    height: 100%;
+}
+.card.show::before, .card.opened::before {
+    bottom: 50%;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+}
