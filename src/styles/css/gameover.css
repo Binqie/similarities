@@ -2,3 +2,6 @@
     display: none;
     color: #FFF;
 }
+.game-over__title {
+    letter-spacing: 3px;
+}

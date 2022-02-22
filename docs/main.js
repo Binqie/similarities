@@ -66,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"../node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".game-over {\\r\\n    display: none;\\r\\n    color: #FFF;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./styles/css/gameover.css?../node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"../node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"../node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \".game-over {\\r\\n    display: none;\\r\\n    color: #FFF;\\r\\n}\\r\\n.game-over__title {\\r\\n    letter-spacing: 3px;\\r\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack:///./styles/css/gameover.css?../node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -206,7 +206,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sty
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ CreateCard)\n/* harmony export */ });\nconst gameWindow = document.querySelector('.game-window');\r\n\r\nclass CreateCard {\r\n    constructor(src, index) {\r\n        this.src = src;\r\n        this.index = index;\r\n    }\r\n\r\n    render() {\r\n        let card = document.createElement('div');\r\n        let img = document.createElement('img');\r\n        card.classList.add('card');\r\n        card.setAttribute('id', this.index);\r\n        img.classList.add('card__img');\r\n        img.setAttribute('src', this.src);\r\n        card.append(img);\r\n        gameWindow.append(card);\r\n    }\r\n}\n\n//# sourceURL=webpack:///./js/modules/createcard.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ CreateCard)\n/* harmony export */ });\nconst gameWindow = document.querySelector('.game-window');\r\n\r\nclass CreateCard {\r\n    constructor(src, index) {\r\n        this.src = src;\r\n        this.index = index;\r\n    }\r\n\r\n    render() {\r\n        let card = document.createElement('div');\r\n        let img = document.createElement('img');\r\n        card.classList.add('card');\r\n        card.setAttribute('data-id', this.index);\r\n        img.classList.add('card__img');\r\n        img.setAttribute('src', this.src);\r\n        card.append(img);\r\n        gameWindow.append(card);\r\n    }\r\n}\n\n//# sourceURL=webpack:///./js/modules/createcard.js?");
 
 /***/ }),
 
@@ -246,7 +246,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ startGame)\n/* harmony export */ });\n/* harmony import */ var _drowfield__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./drowfield */ \"./js/modules/drowfield.js\");\n/* harmony import */ var _gameover__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gameover */ \"./js/modules/gameover.js\");\n/* harmony import */ var _shuffle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shuffle */ \"./js/modules/shuffle.js\");\n\r\n\r\n\r\n\r\nconst restartBtn = document.querySelector('#restart'),\r\n      gameWindow = document.querySelector('.game-window');\r\n\r\nlet cards;\r\n\r\nlet clicksCounter = 0,\r\n    moves = 0;\r\n      \r\nfunction startGame(currentLevel, indexes) {\r\n    document.querySelector('.start-game').style.display = 'none';\r\n    document.querySelector('.game-over').style.display = 'none';\r\n\r\n    gameWindow.style.display = 'grid';\r\n    restartBtn.style.display = 'inline-block';\r\n\r\n    (0,_drowfield__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(currentLevel, (0,_shuffle__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(indexes));\r\n\r\n    cards = document.querySelectorAll('.card');\r\n\r\n    cards.forEach(card => {card.classList.add('show')});\r\n    setTimeout(() => {\r\n        cards.forEach(card => {card.classList.remove('show')});\r\n\r\n        gameWindow.addEventListener('click', triggerGameCheck);\r\n    }, 5000)\r\n}\r\n\r\nfunction triggerGameCheck(e) {\r\n    gameCheck(e);\r\n}\r\n\r\nfunction gameCheck(e) {\r\n    if (e.target === gameWindow || e.target.getAttribute('class') === 'card__img') return;\r\n    \r\n    clicksCounter++;\r\n    moves++;\r\n    e.target.classList.add('show');\r\n\r\n    if (clicksCounter === 2) {\r\n        gameWindow.removeEventListener('click', triggerGameCheck);\r\n\r\n        setTimeout(() => { \r\n            const activeCards = document.querySelectorAll('.card.show');\r\n            if (+activeCards[0].getAttribute('id') === +activeCards[1].getAttribute('id')) {\r\n                activeCards.forEach(card => {card.classList.add('opened')})\r\n\r\n                if (checkForGameOver()) {\r\n                    (0,_gameover__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(moves);\r\n                }\r\n\r\n            } else {\r\n                activeCards.forEach(card => {card.classList.remove('show')})\r\n            }\r\n\r\n            clicksCounter = 0;\r\n            gameWindow.addEventListener('click', triggerGameCheck);\r\n\r\n        }, 1000)\r\n    }\r\n}\r\n\r\nfunction checkForGameOver() {\r\n    let flag = true;\r\n    cards.forEach(card => {\r\n        if (!card.classList.contains('opened')) flag = false;\r\n    });\r\n    return flag;\r\n}\n\n//# sourceURL=webpack:///./js/modules/startgame.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ startGame)\n/* harmony export */ });\n/* harmony import */ var _drowfield__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./drowfield */ \"./js/modules/drowfield.js\");\n/* harmony import */ var _gameover__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./gameover */ \"./js/modules/gameover.js\");\n/* harmony import */ var _shuffle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./shuffle */ \"./js/modules/shuffle.js\");\n\r\n\r\n\r\n\r\nconst restartBtn = document.querySelector('#restart'),\r\n      gameWindow = document.querySelector('.game-window');\r\n\r\nlet cards;\r\n\r\nlet clicksCounter = 0,\r\n    moves = 0;\r\n      \r\nfunction startGame(currentLevel, indexes) {\r\n    document.querySelector('.start-game').style.display = 'none';\r\n    document.querySelector('.game-over').style.display = 'none';\r\n\r\n    gameWindow.style.display = 'grid';\r\n    restartBtn.style.display = 'inline-block';\r\n\r\n    (0,_drowfield__WEBPACK_IMPORTED_MODULE_0__[\"default\"])(currentLevel, (0,_shuffle__WEBPACK_IMPORTED_MODULE_2__[\"default\"])(indexes));\r\n\r\n    cards = document.querySelectorAll('.card');\r\n\r\n    cards.forEach(card => {card.classList.add('show')});\r\n    setTimeout(() => {\r\n        cards.forEach(card => {card.classList.remove('show')});\r\n\r\n        gameWindow.addEventListener('click', triggerGameCheck);\r\n    }, 5000)\r\n}\r\n\r\nfunction triggerGameCheck(e) {\r\n    gameCheck(e);\r\n}\r\n\r\nfunction gameCheck(e) {\r\n    if (e.target === gameWindow || e.target.getAttribute('class') === 'card__img') return;\r\n    \r\n    clicksCounter++;\r\n    moves++;\r\n    e.target.classList.add('show');\r\n\r\n    if (clicksCounter === 2) {\r\n        gameWindow.removeEventListener('click', triggerGameCheck);\r\n\r\n        setTimeout(() => { \r\n            const activeCards = document.querySelectorAll('.card.show');\r\n            if (activeCards[0].getAttribute('data-id') === activeCards[1].getAttribute('data-id')) {\r\n                activeCards.forEach(card => {card.classList.add('opened')})\r\n\r\n                if (checkForGameOver()) {\r\n                    (0,_gameover__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(moves);\r\n                }\r\n\r\n            }\r\n            \r\n            activeCards.forEach(card => {card.classList.remove('show')})\r\n\r\n            clicksCounter = 0;\r\n            gameWindow.addEventListener('click', triggerGameCheck);\r\n\r\n        }, 1000)\r\n    }\r\n}\r\n\r\nfunction checkForGameOver() {\r\n    let flag = true;\r\n    cards.forEach(card => {\r\n        if (!card.classList.contains('opened')) flag = false;\r\n    });\r\n    return flag;\r\n}\n\n//# sourceURL=webpack:///./js/modules/startgame.js?");
 
 /***/ }),
 
@@ -266,7 +266,7 @@ eval("module.exports = __webpack_require__.p + \"0bd1e945eccba3f4cec6.ttf\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"9a881c4200ac9c83a1bf.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/discord.jpg?");
+eval("module.exports = __webpack_require__.p + \"ee0f5257f136bc91164b.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/discord.jpg?");
 
 /***/ }),
 
@@ -276,7 +276,7 @@ eval("module.exports = __webpack_require__.p + \"9a881c4200ac9c83a1bf.jpg\";\n\n
   \*************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"6f35eb3286fb5af628c8.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/instagram.jpg?");
+eval("module.exports = __webpack_require__.p + \"1f9ea975516078491351.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/instagram.jpg?");
 
 /***/ }),
 
@@ -286,7 +286,7 @@ eval("module.exports = __webpack_require__.p + \"6f35eb3286fb5af628c8.jpg\";\n\n
   \*********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"1968d9b3cd481a90dac4.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/music.jpg?");
+eval("module.exports = __webpack_require__.p + \"1119a55fd80e389d6e16.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/music.jpg?");
 
 /***/ }),
 
@@ -296,7 +296,7 @@ eval("module.exports = __webpack_require__.p + \"1968d9b3cd481a90dac4.jpg\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"aecceacb310f07e10279.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/netflix.jpg?");
+eval("module.exports = __webpack_require__.p + \"fd6b0d98b54ebb1ffc6f.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/netflix.jpg?");
 
 /***/ }),
 
@@ -306,7 +306,7 @@ eval("module.exports = __webpack_require__.p + \"aecceacb310f07e10279.jpg\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dd29bd98dc1a42cfdb92.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/spotify.jpg?");
+eval("module.exports = __webpack_require__.p + \"018295811d5428397c6e.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/spotify.jpg?");
 
 /***/ }),
 
@@ -316,7 +316,7 @@ eval("module.exports = __webpack_require__.p + \"dd29bd98dc1a42cfdb92.jpg\";\n\n
   \**********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"7eea50fe2cef30d6dd0c.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/tiktok.jpg?");
+eval("module.exports = __webpack_require__.p + \"92d3568424a9a3001792.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/tiktok.jpg?");
 
 /***/ }),
 
@@ -326,7 +326,7 @@ eval("module.exports = __webpack_require__.p + \"7eea50fe2cef30d6dd0c.jpg\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"cf9b310bd97eff024165.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/twitter.jpg?");
+eval("module.exports = __webpack_require__.p + \"70cf5571621b1b1958c2.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/twitter.jpg?");
 
 /***/ }),
 
@@ -336,7 +336,7 @@ eval("module.exports = __webpack_require__.p + \"cf9b310bd97eff024165.jpg\";\n\n
   \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"ebba4ca92df1bd8b5e12.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/youtube.jpg?");
+eval("module.exports = __webpack_require__.p + \"8fbcc37421c8a14e4ca6.jpg\";\n\n//# sourceURL=webpack:///./img/easy_mode/youtube.jpg?");
 
 /***/ }),
 
@@ -346,7 +346,7 @@ eval("module.exports = __webpack_require__.p + \"ebba4ca92df1bd8b5e12.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"8e04471373f3424500e1.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture1.jpg?");
+eval("module.exports = __webpack_require__.p + \"8da2d559224e0371ee1d.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture1.jpg?");
 
 /***/ }),
 
@@ -356,7 +356,7 @@ eval("module.exports = __webpack_require__.p + \"8e04471373f3424500e1.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"f4d8bd4a5e78e8e523bb.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture2.jpg?");
+eval("module.exports = __webpack_require__.p + \"1f14bcc4bb46a657dc2c.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture2.jpg?");
 
 /***/ }),
 
@@ -366,7 +366,7 @@ eval("module.exports = __webpack_require__.p + \"f4d8bd4a5e78e8e523bb.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"dcd81ca68cc101c4b843.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture3.jpg?");
+eval("module.exports = __webpack_require__.p + \"7759e9368a330c8e6a76.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture3.jpg?");
 
 /***/ }),
 
@@ -376,7 +376,7 @@ eval("module.exports = __webpack_require__.p + \"dcd81ca68cc101c4b843.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"a91c4aef49f8b1b8857d.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture4.jpg?");
+eval("module.exports = __webpack_require__.p + \"770319b05acb691897a6.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture4.jpg?");
 
 /***/ }),
 
@@ -386,7 +386,7 @@ eval("module.exports = __webpack_require__.p + \"a91c4aef49f8b1b8857d.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"3fd2f65c21ec6c29e5c0.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture5.jpg?");
+eval("module.exports = __webpack_require__.p + \"c9ca741a1a825bf8a5da.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture5.jpg?");
 
 /***/ }),
 
@@ -396,7 +396,7 @@ eval("module.exports = __webpack_require__.p + \"3fd2f65c21ec6c29e5c0.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"93e84369f0525e5df37b.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture6.jpg?");
+eval("module.exports = __webpack_require__.p + \"a5a049704be0ff5fca00.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture6.jpg?");
 
 /***/ }),
 
@@ -406,7 +406,7 @@ eval("module.exports = __webpack_require__.p + \"93e84369f0525e5df37b.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"97b40b8a654806eb5b54.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture7.jpg?");
+eval("module.exports = __webpack_require__.p + \"cf900a12e4cd7a48c9b9.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture7.jpg?");
 
 /***/ }),
 
@@ -416,7 +416,7 @@ eval("module.exports = __webpack_require__.p + \"97b40b8a654806eb5b54.jpg\";\n\n
   \************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("module.exports = __webpack_require__.p + \"44ffee8a42d50bc279e1.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture8.jpg?");
+eval("module.exports = __webpack_require__.p + \"92bc062d2fa99a032880.jpg\";\n\n//# sourceURL=webpack:///./img/hard_mode/texture8.jpg?");
 
 /***/ }),
 

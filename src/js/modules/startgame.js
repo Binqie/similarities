@@ -45,16 +45,16 @@ function gameCheck(e) {
 
         setTimeout(() => { 
             const activeCards = document.querySelectorAll('.card.show');
-            if (+activeCards[0].getAttribute('id') === +activeCards[1].getAttribute('id')) {
+            if (activeCards[0].getAttribute('data-id') === activeCards[1].getAttribute('data-id')) {
                 activeCards.forEach(card => {card.classList.add('opened')})
 
                 if (checkForGameOver()) {
                     gameOver(moves);
                 }
 
-            } else {
-                activeCards.forEach(card => {card.classList.remove('show')})
             }
+            
+            activeCards.forEach(card => {card.classList.remove('show')})
 
             clicksCounter = 0;
             gameWindow.addEventListener('click', triggerGameCheck);

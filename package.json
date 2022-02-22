@@ -1,7 +1,6 @@
 {
   "name": "similaryties",
   "version": "1.0.0",
-  "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "dev": "webpack --mode development",
@@ -21,5 +20,17 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Binqie/similarities.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Binqie/similarities/issues"
+  },
+  "homepage": "https://github.com/Binqie/similarities#readme",
+  "description": ""
 }

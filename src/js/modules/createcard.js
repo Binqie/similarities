@@ -10,7 +10,7 @@ export default class CreateCard {
         let card = document.createElement('div');
         let img = document.createElement('img');
         card.classList.add('card');
-        card.setAttribute('id', this.index);
+        card.setAttribute('data-id', this.index);
         img.classList.add('card__img');
         img.setAttribute('src', this.src);
         card.append(img);
